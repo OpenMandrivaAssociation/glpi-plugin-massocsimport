@@ -53,3 +53,33 @@ install -m0644 cron %{buildroot}%{_sysconfdir}/cron.d/%{name}
 %files
 %config(noreplace) %{_sysconfdir}/cron.d/%{name}
 %{_datadir}/glpi/plugins/massocsimport
+
+
+%changelog
+* Sat Feb 04 2012 Oden Eriksson <oeriksson@mandriva.com> 1.5.2-2mdv2012.0
++ Revision: 771130
+- various fixes
+
+* Sat Feb 04 2012 Oden Eriksson <oeriksson@mandriva.com> 1.5.2-1
++ Revision: 771119
+- import glpi-plugin-massocsimport
+
+
+* Sat Feb 04 2012 Oden Eriksson <oeriksson@mandriva.com> 1.5.2-1
+- 1.5.2
+- forward port from mes5.2 (the black hole) and with adjustments
+
+* Sun Aug 14 2011 Oden Eriksson <oeriksson@mandriva.com> 1.4.2-0.1mdvmes5.2
+- 1.4.2
+
+* Mon May 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.0-3.1mdvmes5.2
+- built for updates
+
+* Mon Feb 14 2011 Leonardo Coelho <leonardoc@mandriva.com.br> 1.3.0-3mdvmes5.1
+- fix cron path.
+
+* Wed Jun 09 2010 Anne Nicolas <anne.nicolas@mandriva.com> 1.3.0-2mdvmes5
+- fix plugin directory name
+
+* Thu Feb 18 2010 Tiago Salem Herrmann <salem@mandriva.com> 1.3.0-1mdvmes5
+- first build for MES5
